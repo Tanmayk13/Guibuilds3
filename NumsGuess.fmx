@@ -1,0 +1,48 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Number Guessing Game'
+  ClientHeight = 220
+  ClientWidth = 476
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object TitleLabel: TLabel
+    Position.X = 64.000000000000000000
+    Position.Y = 56.000000000000000000
+    Text = 'TitleLabel'
+    TabOrder = 0
+  end
+  object CounterLabel: TLabel
+    Position.X = 312.000000000000000000
+    Position.Y = 56.000000000000000000
+    Text = 'CounterLabel'
+    TabOrder = 1
+  end
+  object NumbersEdit: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 2
+    Position.X = 64.000000000000000000
+    Position.Y = 104.000000000000000000
+    Size.Width = 177.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object ConfirmButton: TButton
+    Position.X = 312.000000000000000000
+    Position.Y = 104.000000000000000000
+    Size.Width = 97.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Text = 'Confirm'
+    OnClick = ConfirmButtonClick
+  end
+  object HelperLabel: TLabel
+    Position.X = 64.000000000000000000
+    Position.Y = 160.000000000000000000
+    Text = 'HelperLabel'
+    TabOrder = 4
+  end
+end
